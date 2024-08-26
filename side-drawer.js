@@ -21,7 +21,7 @@ dialog {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: var(--side-drawer-offset, 0);
   height: 100%;
 
   transform: translateX(-100%);
@@ -34,7 +34,7 @@ dialog {
 
 :host([right]) dialog {
   left: unset;
-  right: 0;
+  right: var(--side-drawer-offset, 0);
   transform: translateX(100%);
 }
 
